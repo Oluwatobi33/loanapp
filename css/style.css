@@ -1,0 +1,34 @@
+body {
+    margin:0px;
+    padding:0px;
+}
+.section {
+    background-image: url(images/money.jpeg);
+    background-size: cover;
+    background-position: relative;
+    height: 600px;
+    background-attachment: fixed;
+}
+.section1 {
+    margin: 0px;
+}
+.gallery-item {
+    transition: all 2s;
+}
+.gallery-item:hover {
+    transform: scale(0.9);
+}
+.reach {
+    font-size: 34px;
+}
+.abouts {
+    font-size:40px;
+    font-weight: 700;
+    margin: 0px;
+}
+.ope {
+    margin-top: 95px;
+}
+.navbar-brand {
+    color: !important;
+}

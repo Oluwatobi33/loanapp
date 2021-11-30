@@ -3,11 +3,14 @@ body {
     padding:0px;
 }
 .section {
-    background-image: url(images/money.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/money.jpeg");
     background-size: cover;
     background-position: relative;
     height: 600px;
     background-attachment: fixed;
+}
+ h4,a {
+    text-decoration: none;
 }
 .section1 {
     margin: 0px;

@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <!--Bootstrap4 file-->
         <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
-        <!--fontawesome-->
+        fontawesome
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <!--vendor-->
         <link rel="stylesheet" type="text/css" href= "vendor/bootstrap-icons/bootstrap-icons.css">
@@ -19,6 +19,8 @@
         <link rel="styleshet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Google font-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+        <!--aos css slider-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="container-lg">
@@ -39,11 +41,13 @@
                             <a href="#" class="nav-link text-white text-uppercase"> Our Service</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white text-uppercase">Previous work</a>
+                            <a href="contact.php" class="nav-link text-white text-uppercase">Previous work</a>
                         </li>
+                        
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white text-uppercase">contact</a>
+                            <a href="login.php" class="nav-link text-white text-uppercase">Login</a>
                         </li>
+                        
                     </ul>
                 </div>
             </nav>
@@ -183,32 +187,50 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class=" col-lg-3 gallery-item text-center">
-                        <a href="#" class="link-item"><img src="gallery/business.webp" class="img-responsive img-fluid mb-3" width="500" height="200"  alt="gallery"></a>
+                        <div class="card">
+                            <a href="#" class="link-item"><img src="gallery/business.webp" data-aos="flip-left" class="img-responsive img-fluid mb-3"  alt="gallery"></a>
+                        </div>
                     </div>
                     <div class=" col-lg-3 gallery-item text-center">
-                        <a href="#" class="link-item"><img src="gallery/moey.jpg" class="img-responsive img-fluid mb-3" width="500" height="150"  alt="gallery"></a>
+                        <div class="card">
+                            <a href="#" class="link-item"><img src="gallery/moey.jpg" data-aos="flip-right" class="img-responsive img-fluid mb-3"   alt="gallery"></a>
+                        </div>
                     </div>
                     <div class=" col-lg-3 gallery-item text-center">
-                        <a href="#" class="link-item"><img src="gallery/construction.jpg" class="img-responsive img-fluid mb-3" width="500" height="150" alt="gallery"></a>
+                        <div class="card">
+                            <a href="#" class="link-item"><img src="gallery/construction.jpg" data-aos="flip-right" class="img-responsive img-fluid mb-3"  alt="gallery"></a>
+                        </div>
                     </div>
                     <div class=" col-lg-3 gallery-item text-center">
-                        <a href="#" class="link-item"><img src="gallery/give.jpg" class="img-responsive img-fluid mb-3" width="500" height="150" alt="gallery"></a>
+                        <div class="card">
+                            <a href="#" class="link-item"><img src="gallery/give.jpg" data-aos="flip-left" class="img-responsive img-fluid mb-3 card-body"  alt="gallery"></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class=" col-lg-3 gallery-item text-center">
-                        <a href="#" class="link-item"><img src="gallery/explaination.jpg" class="img-responsive img-fluid" width="500" height="150" alt="gallery"></a>
+                        <div class="card my-3">
+                            <div class="card-body">
+                                <a href="#" class="link-item"><img src="gallery/explaination.jpg" class="img-responsive img-fluid py-3"  alt="gallery"></a>
+                            </div>
+                        </div>
                     </div>
                     <div class=" col-lg-3 gallery-item text-center">
-                        <a href="#" class="link-item"><img src="gallery/infra.jpg" class="img-responsive img-fluid" width="500" height="250" alt="gallery"></a>
+                        <div class="card">
+                            <a href="#" class="link-item"><img src="gallery/infra.jpg" data-aos="flip-left" class="img-responsive img-fluid py-3"  alt="gallery"></a>
+                        </div>
                     </div>
                     <div class=" col-lg-3 gallery-item text-center">
-                        <a href="#" class="link-item"><img src="gallery/agric.jpg" class="img-responsive img-fluid" width="500" height="150" alt="gallery"></a>
+                        <div class="card">
+                            <a href="#" class="link-item"><img src="gallery/agric.jpg" data-aos="flip-left" class="img-responsive img-fluid mb-3" alt="gallery"></a>
+                        </div>
                     </div>
                     <div class=" col-lg-3 gallery-item text-center">
-                        <a href="#" class="link-item"><img src="gallery/welding.jpg" class="img-responsive img-fluid" width="500" height="150" alt="gallery"></a>
+                        <div class="card">
+                             <a href="#" class="link-item"><img src="gallery/welding.jpg" class="img-responsive" data-aos="flip-left" img-fluid mb-3"  alt="gallery"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -333,5 +355,15 @@
         <script src="vendor/swiper/swiper-bundle.min.js"></script>
         <!---source file of the document-->
         <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+        INITIALIZE AOS:
+    <script>
+      AOS.init();
+      $('.carousel').carousel({
+            interval: 1000
+    })
+    </script>
+    
+         <!--aos sliding show-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </body>
 </html>
